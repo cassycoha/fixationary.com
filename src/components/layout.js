@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Layout = (props) => {
   const data = useLocation();
@@ -31,40 +33,22 @@ const Layout = (props) => {
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
               <li
-                className={`nav-home  ${data.pathname === "/" ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/`}>Home</Link>
-              </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/bio") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/bio`}>Bio</Link>
-              </li>
-              <li
                 className={`nav-home  ${data.pathname.includes("/work") ? "nav-current" : ""} `}
                 role="menuitem"
               >
-                <Link to={`/work`}>Work</Link>
+                <Link to={`/`}><h6>Work</h6></Link>
               </li>
               <li
-                className={`nav-home  ${data.pathname.includes("/news") ? "nav-current" : ""} `}
+                className={`nav-home  ${data.pathname.includes("/about") ? "nav-current" : ""} `}
                 role="menuitem"
               >
-                <Link to={`/news`}>News</Link>
+                <Link to={`/about`}><h6>About</h6></Link>
               </li>
               <li
                 className={`nav-home  ${data.pathname.includes("/contact") ? "nav-current" : ""} `}
                 role="menuitem"
               >
-                <Link to={`/contact`}>Contact</Link>
-              </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/elements") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/elements`}>Elements</Link>
+                <Link to={`/contact`}><h6>Contact</h6></Link>
               </li>
             </ul>
           </nav>
@@ -76,29 +60,12 @@ const Layout = (props) => {
           <div className="site-head-right">
             <div className="social-links">
               <Link
-                to={`https://facebook.com/${social.facebook}`}
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-              <Link
-                to={`https://instagram.com/${social.twitter}`}
+                to={`https://instagram.com/cassycoha`}
                 title="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
-              </Link>
-
-              <Link
-                to={`https://github.com/lilxyzz/gatsby-clay`}
-                title="Github"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
+                <h4><FontAwesomeIcon icon={faInstagram}/></h4>
               </Link>
             </div>
           </div>
@@ -110,23 +77,7 @@ const Layout = (props) => {
         </div>
       </main>
       <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built by {""}
-        <a
-          href="https://travislord.xyz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Travis Lord
-        </a>
-        {""} & {""}
-        <a
-          href="https://github.com/abdulwaqar844"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Abdul Waqar
-        </a>
+        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link>
       </footer>
     </div>
   );

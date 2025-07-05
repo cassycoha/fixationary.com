@@ -29,6 +29,11 @@ body {
   transition-delay: 0.25;
 }
 
+h4, h5, h6, .h4, .h5, .h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .img {
   display: block;
   width: 100%;
@@ -381,7 +386,7 @@ footer.site-foot a {
     border-bottom: var(--color-base) 2px solid;
   }
   .site-head-open .site-head-right a {
-    opacity: 0.5;
+    opacity: 1;
   }
   .site-head-open .site-foot {
     display: block;

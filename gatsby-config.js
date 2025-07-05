@@ -9,7 +9,7 @@ module.exports = {
     author: siteConfig.author,
     description: siteConfig.description,
     image: siteConfig.image,
-    siteUrl: "https://clay-gatsby.netlify.app/",
+    siteUrl: "https://cassycoha.com/",
     social: {
       twitter: siteConfig.twitter,
       facebook: siteConfig.facebook,

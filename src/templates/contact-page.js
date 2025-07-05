@@ -54,8 +54,6 @@ const ContactPage = ({ data }, location) => {
         </div>
       )}
         <div className="post-content-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque. Nullam non nisi est sit amet facilisis. Quisque id diam vel quam. Morbi tincidunt augue interdum velit. Pellentesque adipiscing commodo elit at imperdiet dui accumsan. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Mi tempus imperdiet nulla malesuada pellentesque. Maecenas ultricies mi eget mauris pharetra et ultrices. Cursus risus at ultrices mi tempus imperdiet nulla. Sit amet nisl suscipit adipiscing bibendum est ultricies. At volutpat diam ut venenatis tellus in. Cursus eget nunc scelerisque viverra mauris in. Ut aliquam purus sit amet luctus venenatis lectus.</p>
-
           <h3 id="forms">Form</h3>
           <form name="contact" method="POST" data-netlify="true" action="thanks" onSubmit={handleSubmit}
           >
@@ -108,15 +106,14 @@ const ContactPage = ({ data }, location) => {
                 />
               </div>
               {/* Break */}
-              {/* General, Purchase, Commissions, Exhibitions, Gallery Feature, Other */}
+              {/* General, Purchase, Commissions, Exhibitions, Other */}
               <div className="col-12">
                 <select name="category" id="category" onChange={handleChange} required={true}>
-                  <option value>-Nature of Enquiry-</option>
+                  <option value disabled selected hidden>What’s the topic of your message?</option>
                   <option value={"General"}>General</option>
-                  <option value={"Purchase"}>Purchase</option>
+                  <option value={"Purchase"}>Purchases</option>
                   <option value={"Commissions"}>Commissions</option>
                   <option value={"Exhibitions"}>Exhibitions</option>
-                  <option value={"Gallery Feature"}>Gallery Feature</option>
                   <option value={"Other"}>Other</option>
                 </select>
               </div>
@@ -152,8 +149,6 @@ const ContactPage = ({ data }, location) => {
                   required={true}
                 />
               </div>
-              
-              <div data-netlify-recaptcha="true"></div>
   
               {/* Break */}
               <div className="col-12">
