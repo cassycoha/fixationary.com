@@ -230,6 +230,11 @@ footer.site-foot a {
   height: 28px;
 }
 
+.site-head-logo-svg {
+  width: 300px;
+  height: auto;
+}
+
 .site-head-right {
   position: relative;
   z-index: 100;

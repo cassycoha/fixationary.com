@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../img/fixationary.svg";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -32,7 +33,7 @@ const Layout = (props) => {
           </a>
           <nav id="swup" className="site-head-left">
               <Link className="site-head-logo" to={`/`}>
-                {title}
+                <Logo className="site-head-logo-svg" />
               </Link>
           </nav>
           <div className="site-head-center">
