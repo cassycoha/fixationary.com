@@ -46,7 +46,7 @@ const ContactPage = ({ data }, location) => {
      
       <article className="contact-form page-template ">
         <div className="post-content-body">
-          <h3 id="forms">Form</h3>
+          <h3 id="forms">contribute</h3>
           <form name="contact" method="POST" data-netlify="true" action="thanks" onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
