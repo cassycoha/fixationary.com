@@ -1,10 +1,10 @@
 const siteConfig = {
-  name: 'Cassy Coha',
-  shortName: 'Cassy Coha',
-  description: 'Cassy Coha - Artwork Portfolio',
+  name: 'fixationary',
+  shortName: 'fixationary',
+  description: 'fixationary',
   url: '/', // Domain of your site without prefix!
   prefix: '/',
-  author: 'Cassy Coha',
+  author: 'fixationary',
   twitter: '' ,
   facebook:'',
   github:'',
