@@ -31,26 +31,6 @@ const Layout = (props) => {
             </div>
           </a>
           <nav id="swup" className="site-head-left">
-            <ul className="nav" role="menu">
-              <li
-                className={`nav-home  ${data.pathname.includes("/work") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/`}><h6>Work</h6></Link>
-              </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/about") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/about`}><h6>About</h6></Link>
-              </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/contact") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/contact`}><h6>Contact</h6></Link>
-              </li>
-            </ul>
           </nav>
           <div className="site-head-center">
             <Link className="site-head-logo" to={`/`}>
@@ -58,6 +38,26 @@ const Layout = (props) => {
             </Link>
           </div>
           <div className="site-head-right">
+          <ul className="nav" role="menu">
+              <li
+                className={`nav-home  ${data.pathname.includes("/about") ? "nav-current" : ""} `}
+                role="menuitem"
+              >
+                <Link to={`/about`}><h6>about</h6></Link>
+              </li>
+              <li
+                className={`nav-home  ${data.pathname.includes("/contact") ? "nav-current" : ""} `}
+                role="menuitem"
+              >
+                <Link to={`/contact`}><h6>contribute</h6></Link>
+              </li>
+              <li
+                className={`nav-home  ${data.pathname.includes("/shop") ? "nav-current" : ""} `}
+                role="menuitem"
+              >
+                <Link to={`/`}><h6>shop</h6></Link>
+              </li>
+            </ul>
             <div className="social-links">
               <Link
                 to={`https://instagram.com/cassycoha`}
