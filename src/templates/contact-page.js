@@ -45,14 +45,6 @@ const ContactPage = ({ data }, location) => {
         />
      
       <article className="contact-form page-template ">
-      {data.markdownRemark.frontmatter.thumbnail && (
-        <div className="post-content-image">
-          <GatsbyImage
-            image={getImage(data.markdownRemark.frontmatter.thumbnail)}
-            className="kg-image"
-            alt={data.markdownRemark.frontmatter.title} />
-        </div>
-      )}
         <div className="post-content-body">
           <h3 id="forms">Form</h3>
           <form name="contact" method="POST" data-netlify="true" action="thanks" onSubmit={handleSubmit}
