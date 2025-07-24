@@ -53,7 +53,7 @@ export const aboutPageQuery = graphql`
           }
         }
       }
-    markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
+    markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
         frontmatter {
           title
           description

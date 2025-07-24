@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: index-page
 thumbnail: /img/about.jpg
 date: 2023-03-02T10:17:05.133Z
 title: About
