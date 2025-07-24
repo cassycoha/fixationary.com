@@ -27,10 +27,10 @@ const aboutPage = (props) => {
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>
-          <img src={logoSquareUrl} alt="fixationary" />
           {post.frontmatter.description && (
             <p className="post-content-excerpt">{post.frontmatter.description}</p>
           )}
+          <img src={logoSquareUrl} alt="fixationary" />
           <div
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
