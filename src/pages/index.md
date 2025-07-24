@@ -2,7 +2,7 @@
 templateKey: index-page
 thumbnail: /img/about.jpg
 date: 2023-03-02T10:17:05.133Z
-title: About
+title: fixationary
 description: a zine for creative obsessions too loud to keep quiet
 number: 0
 featuredimage: /img/about.jpg

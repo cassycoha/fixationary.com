@@ -1,4 +1,5 @@
 import React from "react";
+import logoSquareUrl from "../img/fixationary-square.svg";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -26,6 +27,7 @@ const aboutPage = (props) => {
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>
+          <img src={logoSquareUrl} alt="fixationary" />
           {post.frontmatter.description && (
             <p className="post-content-excerpt">{post.frontmatter.description}</p>
           )}
