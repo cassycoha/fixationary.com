@@ -31,10 +31,8 @@ const Layout = (props) => {
             </div>
           </a>
           <nav id="swup" className="site-head-left">
-              <Link className="site-head-logo" to={`/`}> 
-               <a href="http://fixationary.com/" title="fixationary" alt="fixationary">
-               <img src="/img/fixationary.svg" style="max-width: 300px; width: 100%; vertical-align: middle;">
-               </a>
+              <Link className="site-head-logo" to={`/`}>
+                {title}
               </Link>
           </nav>
           <div className="site-head-center">
