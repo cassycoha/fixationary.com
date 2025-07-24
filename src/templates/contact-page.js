@@ -109,12 +109,12 @@ const ContactPage = ({ data }, location) => {
               {/* General, Purchase, Commissions, Exhibitions, Other */}
               <div className="col-12">
                 <select name="category" id="category" onChange={handleChange} required={true}>
-                  <option value disabled selected hidden>What’s the topic of your message?</option>
-                  <option value={"General"}>General</option>
-                  <option value={"Purchase"}>Purchases</option>
-                  <option value={"Commissions"}>Commissions</option>
-                  <option value={"Exhibitions"}>Exhibitions</option>
-                  <option value={"Other"}>Other</option>
+                  <option value disabled selected hidden>do you like eggs?</option>
+                  <option value={"General"}>heck no</option>
+                  <option value={"Purchase"}>meh</option>
+                  <option value={"Commissions"}>i guess</option>
+                  <option value={"Exhibitions"}>omg yes</option>
+                  <option value={"Other"}>i am egg</option>
                 </select>
               </div>
 
